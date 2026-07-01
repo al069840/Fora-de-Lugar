@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-@export var VELOCIDAD = 200.0  # Ya cambiado a export como lo hicimos antes
+@export var VELOCIDAD = 200.0
 var numero_plato_actual = 0  # 0 significa manos vacías
 
 func _physics_process(_delta):
@@ -10,16 +10,10 @@ func _physics_process(_delta):
 	# Usamos Input.is_physical_key_pressed, que lee el teclado directamente por hardware
 	if Input.is_physical_key_pressed(KEY_RIGHT) or Input.is_physical_key_pressed(KEY_D):
 		direccion_x = 1
-		# =========================================================
-		# AJUSTADO: Mano derecha (X adelante, Y justo en la bandeja)
-		# =========================================================
 		$PlatoCargado.position = Vector2(80, -100)
 		
 	elif Input.is_physical_key_pressed(KEY_LEFT) or Input.is_physical_key_pressed(KEY_A):
 		direccion_x = -1
-		# =========================================================
-		# CORREGIDO: Mano izquierda (X en NEGATIVO para cambiar de lado)
-		# =========================================================
 		$PlatoCargado.position = Vector2(-80, -100)
 		
 	if Input.is_physical_key_pressed(KEY_DOWN) or Input.is_physical_key_pressed(KEY_S):
@@ -35,18 +29,45 @@ func _physics_process(_delta):
 	position.x = clamp(position.x, 40, 960)
 	position.y = clamp(position.y, 230, 575)
 	
-	# REGRESAN LAS ANIMACIONES
-	if velocity.x > 0:
-		$AnimatedSprite2D.play("Derecha")
-	elif velocity.x < 0:
-		$AnimatedSprite2D.play("Izquierda")
-	elif velocity.y != 0:
-		# Si solo se mueve hacia arriba o abajo, que use la animación de caminar de lado
-		$AnimatedSprite2D.play("Derecha")
-		# Mantiene el plato en la mano derecha correspondientemente
-		$PlatoCargado.position = Vector2(32, -42)
-	else:
-		# Si dejas de presionar todo, se queda quieto de frente
-		$AnimatedSprite2D.play("Quieto")
-		# Centramos el plato un poco en sus manos delanteras mientras espera
+	# =========================================================
+	# CONTROL DE ANIMACIONES Y AJUSTE DE TAMAÑO (ESCALA CORREGIDA)
+	# =========================================================
+	if direccion_y > 0:
+		$AnimatedSprite2D.play("Abajo")
+		# -------------------------------------------------------------
+		# CORREGIDO: Reducimos a la mitad (0.5) porque el sprite base es muy grande.
+		# Si notas que queda muy chico o muy grande, calíbralo a 0.55 o 0.6
+		# -------------------------------------------------------------
+		$AnimatedSprite2D.scale = Vector2(0.9, 0.9)
+		
 		$PlatoCargado.position = Vector2(0, -38)
+		$PlatoCargado.z_index = 1
+		$TextoPlatoCargado.z_index = 1
+		
+	elif direccion_y < 0:
+		$AnimatedSprite2D.play("Arriba")
+		# Reducimos también a la mitad cuando va hacia atrás
+		$AnimatedSprite2D.scale = Vector2(0.9, 0.9) 
+		
+		$PlatoCargado.position = Vector2(0, -50)
+		$PlatoCargado.z_index = -1  # Esconde el plato tras la espalda
+		$TextoPlatoCargado.z_index = -1
+		
+	elif direccion_x > 0:
+		$AnimatedSprite2D.play("Derecha")
+		$AnimatedSprite2D.scale = Vector2(1.0, 1.0) # Vuelve al tamaño original (100%)
+		$PlatoCargado.z_index = 1
+		$TextoPlatoCargado.z_index = 1
+		
+	elif direccion_x < 0:
+		$AnimatedSprite2D.play("Izquierda")
+		$AnimatedSprite2D.scale = Vector2(1.0, 1.0) # Vuelve al tamaño original (100%)
+		$PlatoCargado.z_index = 1
+		$TextoPlatoCargado.z_index = 1
+		
+	else:
+		$AnimatedSprite2D.play("Quieto")
+		$AnimatedSprite2D.scale = Vector2(1.0, 1.0) # Vuelve al tamaño original (100%)
+		$PlatoCargado.position = Vector2(0, -38)
+		$PlatoCargado.z_index = 1
+		$TextoPlatoCargado.z_index = 1

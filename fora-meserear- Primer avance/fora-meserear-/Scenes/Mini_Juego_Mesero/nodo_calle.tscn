@@ -3,12 +3,15 @@
 [ext_resource type="Texture2D" uid="uid://d0k6moy12sj8d" path="res://images/Mesero/calle.png" id="1_8voex"]
 [ext_resource type="Script" uid="uid://coce0lditxn8c" path="res://Scenes/Mini_Juego_Mesero/nodo_calle.gd" id="1_pjbue"]
 [ext_resource type="PackedScene" uid="uid://bdk38tfn6t0o3" path="res://Scenes/Mini_Juego_Mesero/mesero.tscn" id="2_ye407"]
-[ext_resource type="Texture2D" uid="uid://bgrrcriw43w4o" path="res://Mesa1.png" id="3_a33dj"]
-[ext_resource type="Texture2D" uid="uid://c4rcw363cg348" path="res://Mesa2.png" id="4_o6bcr"]
+[ext_resource type="Texture2D" uid="uid://d4f0l5kgy7nap" path="res://Puestos/puesto2 - copia.png" id="3_4fcho"]
+[ext_resource type="Texture2D" uid="uid://bgrrcriw43w4o" path="res://Mesas/Mesa1.png" id="3_a33dj"]
+[ext_resource type="Texture2D" uid="uid://c8fauj3d1shjm" path="res://Puestos/puesto3 - copia.png" id="4_1k82d"]
+[ext_resource type="Texture2D" uid="uid://c4rcw363cg348" path="res://Mesas/Mesa2.png" id="4_o6bcr"]
 [ext_resource type="Script" uid="uid://xycofc6uaoi7" path="res://Scenes/Mini_Juego_Mesero/mesa.gd" id="4_xgxix"]
-[ext_resource type="Texture2D" uid="uid://4rtqxfxg5e2" path="res://Mesa3.png" id="5_6nrxl"]
-[ext_resource type="Texture2D" uid="uid://wqpc1t64urc3" path="res://Mesa4.png" id="6_pjbue"]
-[ext_resource type="Texture2D" uid="uid://n35idjl12vhv" path="res://Mesa5.png" id="7_xgxix"]
+[ext_resource type="Texture2D" uid="uid://4rtqxfxg5e2" path="res://Mesas/Mesa3.png" id="5_6nrxl"]
+[ext_resource type="Texture2D" uid="uid://co5w3s6y3se27" path="res://Puestos/puesto 1 - copia.png" id="5_bmf87"]
+[ext_resource type="Texture2D" uid="uid://wqpc1t64urc3" path="res://Mesas/Mesa4.png" id="6_pjbue"]
+[ext_resource type="Texture2D" uid="uid://n35idjl12vhv" path="res://Mesas/Mesa5.png" id="7_xgxix"]
 [ext_resource type="AudioStream" uid="uid://caeapws8tysbu" path="res://sounds/level1_music.mp3" id="10_td1ul"]
 [ext_resource type="AudioStream" uid="uid://djuatm4hlg6ce" path="res://sounds/campana.mp3" id="11_uehlc"]
 [ext_resource type="AudioStream" uid="uid://dsmdn21xbgm80" path="res://sounds/cash2.mp3" id="12_07y5a"]
@@ -54,9 +57,24 @@ grow_vertical = 2
 pivot_offset = Vector2(785, 471)
 texture = ExtResource("1_8voex")
 
+[node name="PuestoCentro" type="Sprite2D" parent="CanvasLayer" unique_id=1476642255]
+position = Vector2(598, 184)
+scale = Vector2(0.34986413, 0.37805715)
+texture = ExtResource("3_4fcho")
+
+[node name="PuestoDerecho" type="Sprite2D" parent="CanvasLayer" unique_id=541678845]
+position = Vector2(845, 183)
+scale = Vector2(0.35618278, 0.37365603)
+texture = ExtResource("4_1k82d")
+
+[node name="Puesto1Copia" type="Sprite2D" parent="CanvasLayer" unique_id=1248991005]
+position = Vector2(315, 187)
+scale = Vector2(0.356268, 0.365285)
+texture = ExtResource("5_bmf87")
+
 [node name="Mesero" parent="." unique_id=614565725 instance=ExtResource("2_ye407")]
 y_sort_enabled = true
-position = Vector2(35, 226)
+position = Vector2(52, 228)
 
 [node name="Mesa 1" type="StaticBody2D" parent="." unique_id=76096865]
 y_sort_enabled = true
