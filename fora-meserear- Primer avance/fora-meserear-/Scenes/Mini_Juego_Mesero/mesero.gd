@@ -2,7 +2,13 @@ extends CharacterBody2D
 
 @export var VELOCIDAD = 200.0
 var numero_plato_actual = 0  # 0 significa manos vacías
+var vidas = 3
+var posicion_inicial: Vector2
+var esta_inmune = false
 
+func _ready():
+	# Guardamos la posición donde inicia el mesero al empezar el juego
+	posicion_inicial = position
 func _physics_process(_delta):
 	var direccion_x = 0
 	var direccion_y = 0
@@ -71,3 +77,42 @@ func _physics_process(_delta):
 		$PlatoCargado.position = Vector2(0, -38)
 		$PlatoCargado.z_index = 1
 		$TextoPlatoCargado.z_index = 1
+
+func recibir_dano():
+	# Si es inmune, ignoramos el golpe
+	if esta_inmune:
+		return
+		
+	vidas -= 1
+	print("Me golpearon. Vidas restantes: ", vidas)
+	
+	# Dinámica de soltar la comida en la colisión
+	numero_plato_actual = 0
+	if has_node("PlatoCargado"):
+		$PlatoCargado.visible = false
+	if has_node("TextoPlatoCargado"):
+		$TextoPlatoCargado.visible = false
+	
+	# Le avisamos a los corazones que cambien
+	if has_node("/root/NodoCalle/CanvasLayer"):
+		get_node("/root/NodoCalle/CanvasLayer").actualizar_corazones(vidas)
+	
+	# Si se acaban las vidas, salimos para que el HUD se encargue de pausar
+	if vidas <= 0:
+		return
+		
+	# Regresar al punto inicial si aún le quedan vidas
+	position = posicion_inicial
+	comenzar_inmunidad()
+
+func comenzar_inmunidad():
+	esta_inmune = true
+	
+	# Un ciclo para que parpadee: 10 veces (0.15s invisible + 0.15s visible = 0.3s por ciclo x 10 = 3 segundos)
+	for i in range(10):
+		$AnimatedSprite2D.modulate.a = 0.2 # Se vuelve casi transparente
+		await get_tree().create_timer(0.15).timeout
+		$AnimatedSprite2D.modulate.a = 1.0 # Vuelve a la normalidad
+		await get_tree().create_timer(0.15).timeout
+		
+	esta_inmune = false

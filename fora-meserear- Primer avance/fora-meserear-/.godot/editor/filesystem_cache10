@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1782923240
+::res://::1782936242
 icon.svg::CompressedTexture2D::8514486134802932312::1782882708::1782883253::1::::<><><>0<>0<>cfce7d7f168f34158b1e9a4c724ffbcb<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 ::res://images/::1782923240
 ::res://images/MenuInicio/::1782883254
@@ -23,7 +23,7 @@ Mesa2.png::CompressedTexture2D::6843574495977472763::1782882708::1782884917::1::
 Mesa3.png::CompressedTexture2D::60933949991243803::1782882708::1782884917::1::::<><><>0<>0<>8e82c60b467571bbe34ee520d0493784<>res://.godot/imported/Mesa3.png-7018e90a8b3dbe75c388735525c0d6e5.ctex::
 Mesa4.png::CompressedTexture2D::1578100326987420980::1782882708::1782884917::1::::<><><>0<>0<>233fc7faa58faa2f9c55b8a31c1bfd64<>res://.godot/imported/Mesa4.png-bbbe57b26d165f92a8f12804a61f9590.ctex::
 Mesa5.png::CompressedTexture2D::972093512551238127::1782882708::1782884917::1::::<><><>0<>0<>eb01d2e1142174945798a94ceda09106<>res://.godot/imported/Mesa5.png-bb00d905c1ec1e5da059c31e8296ef24.ctex::
-::res://MeseroSprites/::1782923210
+::res://MeseroSprites/::1782923241
 camina haci atras clear.png::CompressedTexture2D::6643259713645005412::1782884986::1782923241::1::::<><><>0<>0<>45c52b1eea11536a8f1af4b84a5b7c20<>res://.godot/imported/camina haci atras clear.png-083f5a23f73f89ccf7a3dd958ee9ee16.ctex::
 caminando hacia delante clear.png::CompressedTexture2D::8034011059852184689::1782884986::1782923241::1::::<><><>0<>0<>b2c29532a50b12ed107c04e3f13d76c7<>res://.godot/imported/caminando hacia delante clear.png-80c7f2e993cb2490fa0b0fd0937f8df4.ctex::
 Drc1.png::CompressedTexture2D::7644290087216187443::1782882708::1782923241::1::::<><><>0<>0<>29682622e59186e15f4edd3a6165c440<>res://.godot/imported/Drc1.png-9cd4e39fcb207df157a629ac51effcbb.ctex::
@@ -34,6 +34,13 @@ Izq1.png::CompressedTexture2D::2557112688864856407::1782882708::1782923241::1:::
 Izq2.png::CompressedTexture2D::1469837563118485533::1782882708::1782923241::1::::<><><>0<>0<>bb92513eebb9bf66a4c9520086196254<>res://.godot/imported/Izq2.png-31fca8929b85636cf1a24b6c3976cdaf.ctex::
 Izq3.png::CompressedTexture2D::4440019405369391411::1782882708::1782923241::1::::<><><>0<>0<>4e40c606a3fb38e1bfef1199761349dc<>res://.godot/imported/Izq3.png-6d56a7fe45c718e886b7385129739699.ctex::
 Izq4.png::CompressedTexture2D::7662363429183133061::1782882708::1782923241::1::::<><><>0<>0<>1cf6fe0d0a8c8ffbb8e126e225fa5bc7<>res://.godot/imported/Izq4.png-d6d6e20a0e7013e9ebe54d3e93b61c0a.ctex::
+::res://Perrito/::1782936294
+Perro1 - copia.png::CompressedTexture2D::3721474914578080170::1782936294::1782936294::1::::<><><>0<>0<>621181fcccca4854d2d9abe0c5db622f<>res://.godot/imported/Perro1 - copia.png-588a3c778c25d2dab0b11b3a7349c8cb.ctex::
+Perro1I - copia.png::CompressedTexture2D::1302692909363926800::1782936294::1782936294::1::::<><><>0<>0<>34af1ec99e6741c56ece5e28f5054414<>res://.godot/imported/Perro1I - copia.png-9a07d25f007cafc52def8b4d1dae467b.ctex::
+Perro2 - copia.png::CompressedTexture2D::3048656708117137243::1782936294::1782936294::1::::<><><>0<>0<>2dcc4463b7e3f7dfe3a3105571e82764<>res://.godot/imported/Perro2 - copia.png-15c69de2a65d6760cefbd26bae4a1ea3.ctex::
+Perro2I - copia.png::CompressedTexture2D::3446876717554354717::1782936294::1782936294::1::::<><><>0<>0<>67b5d751d2a695a6a2a93b60bd4588cc<>res://.godot/imported/Perro2I - copia.png-1887a149b3c42d4af09af8180eecc48d.ctex::
+Perro3 - copia.png::CompressedTexture2D::3993750080381184590::1782936294::1782936294::1::::<><><>0<>0<>be4700d5e74ea0b421a2b5b0988a8df3<>res://.godot/imported/Perro3 - copia.png-a0809d03704be7dde398f223fd211ed4.ctex::
+Perro3I - copia.png::CompressedTexture2D::6997414362447066580::1782936294::1782936294::1::::<><><>0<>0<>8a827aaa779ac6f4fc7255b1e1013be7<>res://.godot/imported/Perro3I - copia.png-4a11cba631c7e79f43e901a35f020d4c.ctex::
 ::res://Puestos/::1782889287
 puesto2 - copia.png::CompressedTexture2D::9206599565359162499::1782889287::1782889287::1::::<><><>0<>0<>c14294966cfb263315efa85157c696a1<>res://.godot/imported/puesto2 - copia.png-c92ba00fe60ef7c352797a13167e8950.ctex::
 puesto3 - copia.png::CompressedTexture2D::7099431328226109418::1782889287::1782889287::1::::<><><>0<>0<>ea4736874bf57dff82380964881c2182<>res://.godot/imported/puesto3 - copia.png-e81ffc8161f190d55cd24aaa766d606f.ctex::
@@ -46,14 +53,15 @@ btn_iniciar.gd::GDScript::3484365137947791298::1782882708::0::1::::<>Button<><>0
 btn_salir.gd::GDScript::2742466329984695882::1782882708::0::1::::<>Button<><>0<>0<><>::
 Info.tscn::PackedScene::851700980895133079::1782882708::0::1::::<><><>0<>0<><>::uid://b1n3gwwihqbmh::::res://images/MenuInicio/Info.png<>uid://b6wf0t5cec82f::::res://Scenes/Menu/BtnBack.gd
 MenuInicio.tscn::PackedScene::6786279968134366951::1782885211::0::1::::<><><>0<>0<><>::uid://bshcew7gqotty::::res://images/MenuInicio/fondo_menu.PNG<>uid://bpv38qmuypbcc::::res://Scenes/Menu/btn_iniciar.gd<>uid://c53578s2ykjph::::res://Scenes/Menu/btn_info.gd<>uid://bfcqaw4iyl1y1::::res://Scenes/Menu/btn_salir.gd<>uid://rffvjmfd53va::::res://sounds/menu_music.mp3
-::res://Scenes/Mini_Juego_Mesero/::1782923240
+::res://Scenes/Mini_Juego_Mesero/::1782936184
 mesa.gd::GDScript::1664035172013981832::1782882708::0::1::::<>StaticBody2D<><>0<>0<><>::
-mesero.gd::GDScript::173854900695995228::1782888188::0::1::::<>CharacterBody2D<><>0<>0<><>::
+mesero.gd::GDScript::173854900695995228::1782936184::0::1::::<>CharacterBody2D<><>0<>0<><>::
 mesero.tscn::PackedScene::2619391005444656452::1782923240::0::1::::<><><>0<>0<><>::uid://cqhmnywah7v1::::res://Scenes/Mini_Juego_Mesero/mesero.gd<>uid://dg57lucn3sqln::::res://MeseroSprites/Drc1.png<>uid://dmpy8us8furxp::::res://MeseroSprites/caminando hacia delante clear.png<>uid://ct824rsqviwpb::::res://MeseroSprites/Drc2.png<>uid://c1wbrtr5rj453::::res://MeseroSprites/camina haci atras clear.png<>uid://5n18x64uvdo2::::res://MeseroSprites/Drc3.png<>uid://b12u4nfcdrtdb::::res://MeseroSprites/Drc4.png<>uid://bcoxji45ifbud::::res://MeseroSprites/Izq1.png<>uid://u7aalp3uciwb::::res://MeseroSprites/Izq2.png<>uid://b4i1qamx71mj8::::res://MeseroSprites/Izq3.png<>uid://dhfyahfom8ge4::::res://MeseroSprites/Izq4.png<>uid://c7fa1dlcfutjd::::res://images/Mesero/ParadoD.png<>uid://bmjqpmvd3jtq4::::res://images/Mesero/ParadoI.png
 nodo_calle.gd::GDScript::5759902029426522048::1782882708::0::1::::<>Node2D<><>0<>0<><>::
-nodo_calle.tscn::PackedScene::4383877639460252343::1782890487::0::1::::<><><>0<>0<><>::uid://d0k6moy12sj8d::::res://images/Mesero/calle.png<>uid://coce0lditxn8c::::res://Scenes/Mini_Juego_Mesero/nodo_calle.gd<>uid://bdk38tfn6t0o3::::res://Scenes/Mini_Juego_Mesero/mesero.tscn<>uid://d4f0l5kgy7nap::::res://Puestos/puesto2 - copia.png<>uid://bgrrcriw43w4o::::res://Mesas/Mesa1.png<>uid://c8fauj3d1shjm::::res://Puestos/puesto3 - copia.png<>uid://c4rcw363cg348::::res://Mesas/Mesa2.png<>uid://xycofc6uaoi7::::res://Scenes/Mini_Juego_Mesero/mesa.gd<>uid://4rtqxfxg5e2::::res://Mesas/Mesa3.png<>uid://co5w3s6y3se27::::res://Puestos/puesto 1 - copia.png<>uid://wqpc1t64urc3::::res://Mesas/Mesa4.png<>uid://n35idjl12vhv::::res://Mesas/Mesa5.png<>uid://caeapws8tysbu::::res://sounds/level1_music.mp3<>uid://djuatm4hlg6ce::::res://sounds/campana.mp3<>uid://dsmdn21xbgm80::::res://sounds/cash2.mp3
+nodo_calle.tscn::PackedScene::4383877639460252343::1782924736::0::1::::<><><>0<>0<><>::uid://d0k6moy12sj8d::::res://images/Mesero/calle.png<>uid://coce0lditxn8c::::res://Scenes/Mini_Juego_Mesero/nodo_calle.gd<>uid://bdk38tfn6t0o3::::res://Scenes/Mini_Juego_Mesero/mesero.tscn<>uid://d4f0l5kgy7nap::::res://Puestos/puesto2 - copia.png<>uid://bgrrcriw43w4o::::res://Mesas/Mesa1.png<>uid://c8fauj3d1shjm::::res://Puestos/puesto3 - copia.png<>uid://c4rcw363cg348::::res://Mesas/Mesa2.png<>uid://xycofc6uaoi7::::res://Scenes/Mini_Juego_Mesero/mesa.gd<>uid://4rtqxfxg5e2::::res://Mesas/Mesa3.png<>uid://co5w3s6y3se27::::res://Puestos/puesto 1 - copia.png<>uid://wqpc1t64urc3::::res://Mesas/Mesa4.png<>uid://n35idjl12vhv::::res://Mesas/Mesa5.png<>uid://caeapws8tysbu::::res://sounds/level1_music.mp3<>uid://djuatm4hlg6ce::::res://sounds/campana.mp3<>uid://dsmdn21xbgm80::::res://sounds/cash2.mp3
 plato.gd::GDScript::4956299455174946863::1782882708::0::1::::<>Area2D<><>0<>0<><>::
 plato.tscn::PackedScene::4263269702951916953::1782882708::0::1::::<><><>0<>0<><>::uid://ccu4r7iw4w6hf::::res://Scenes/Mini_Juego_Mesero/plato.gd
+perrito.tscn::PackedScene::8929291225313552387::1782936184::0::1::::<><><>0<>0<><>::
 ::res://sounds/::1782883253
 campana.mp3::AudioStreamMP3::7832283804399532356::1782882708::1782883253::1::::<><><>0<>0<>a8718ded4830c34418044eccba1203ca<>res://.godot/imported/campana.mp3-c532e74e8060cb22b6085e048acb60e6.mp3str::
 cash2.mp3::AudioStreamMP3::8447640595253637067::1782882708::1782883253::1::::<><><>0<>0<>9c06f106ee4362d70c799eecc705ab40<>res://.godot/imported/cash2.mp3-851c925879df2ea3103126ac1422c220.mp3str::
