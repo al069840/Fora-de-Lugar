@@ -1,0 +1,7 @@
+res://Scenes/Mini_Juego_Mesero/nodo_calle.tscn
+res://Scenes/Mini_Juego_Mesero/mesero.gd
+res://Scenes/Mini_Juego_Mesero/perrito.tscn
+res://Scenes/Mini_Juego_Mesero/perrito.gd
+res://Scenes/Mini_Juego_Mesero/canvas_layer.gd
+res://Scenes/Mini_Juego_Mesero/mesero.tscn
+res://Scenes/Menu/MenuInicio.tscn

@@ -10,8 +10,8 @@ config_version=5
 
 [application]
 
-config/name="Fora Meserear"
-run/main_scene="uid://c5d7fxxmm3f7n"
+config/name="Fora Meserear260701"
+run/main_scene="uid://c3xlbl06486ox"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
